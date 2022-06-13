@@ -7,15 +7,15 @@ Additionally, columns later generated in R are described, although they do not e
 1)	The file named "data.csv" consists of the data generated from the questionnaire, exported from Nettskjema. 
 Additionally, it was minimally preprocessed in Excel. Some sum and average variables were calculated. 
 Some scores are repeated a number of times for each participant. See below a detailed explanation for 
-what each column represents. Shape: 
+what each column represents. Shape: 440 x 29
 
 2)	The file named "data_descriptives.csv" consists of a subset of the "data.csv" file (the following columns: 
 "pnr", "age", "gen", "loss", "music", "empathy", "associations"), with only on row per participant.
 Additionally, average scores per participant, across the 8 excerpts were calculated. See below details
-about each column. Shape:
+about each column. Shape: 55 x 29
 
 3)	The file named "excerpts_correlation.csv" consists of average scores for each excerpt, across participants, 
-and it is based on the file "data.csv" (similar column "ex"). See below details about each column. Shape: 
+and it is based on the file "data.csv" (similar column "ex"). See below details about each column. Shape: 8 x 7
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
