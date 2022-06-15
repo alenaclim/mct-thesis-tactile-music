@@ -1,74 +1,19 @@
-# mct-thesis-tactile-music
-This is a repository constains R scripts and datasets used for my Master's thesis as part of the Master's program
-Music, Communication and Technology from University of Oslo.
+### mct-thesis-tactile-music
+
+This repository constains additional materials used for my Master's thesis as part of the Master's program Music, Communication and Technology from University of Oslo.
 
 ---------------------------------------------------------------------------------------------------------------------------
+# An exploratory study of Emotional Responses to Vibro-tactile Music
 
-R-scripts from 1 to 9 contain the code used to import the datasets, prepare them and run several analysis, as well 
-as to create visualizations. 
+## Abstract
 
-More details below about each file. For more information about the datasets and their columns see the 
-README_csv_files.txt file. 
+The sense of touch in humans is an important component of the way we perceive the world around us. In recent literature, studies focused on the sense of touch from a musical perspective and the possibility to use tactile illusions to convey meaningful musical aspects. The present study explored the emotional response to vibro-tactile music, with potential for enhancing the musical experiences of people suffering from hearing loss. Categorical and continuous models were used to measure emotional response. Several differences were noted between ratings of felt/recognized emotions, hearing and non-hearing participants, musicians and non-musicians. Musical and imaginative associations were also experienced by the participants in most cases. Overall, irrelevant of the intended emotion, nearly all excerpts were considered happy, and a few peaceful, suggesting a bias towards rating vibro-tactile as pleasant, which is consistent with participants’ opinions. This suggests that vibro-tactile music is successful in conveying emotions and should be explored further.
 
-The questionnaire used for the experiment can be seen in the file "questionnaire.docx". 
+------------------------------------------------------------------------------------------------------------------------
 
-The Google Colab notebook used to randomize the order of the excerpts for all participants can be found at this 
-link: https://colab.research.google.com/drive/1LOJ0pDURY229FxI1wCytecE31uKSp-3h?usp=sharing. 
+This repository contains the R-scripts that were used to import and prepare the dataset, to arrange it in specific ways necessary for several types of analysis that were run, as well as create visualizations. 
 
-The entire manuscript of the thesis can be seen in "Clim_MCT_Thesis_may2022.pdf". For any questions or remarks please 
-contact me at alena.clim@gmail.com.
+Details about each individual R script can be found in `README_scripts.txt`. Information about the files containing the dataset can be found in `README_csv_files.txt`, as well as details about each of the columns in the dataset. The questionnaire used for the experiment can be found in the file `questionnaire.docx`. The Google Colab Notebook used to randomize the order of the excerpts for all participants can be found at [this link.](https://colab.research.google.com/drive/1LOJ0pDURY229FxI1wCytecE31uKSp-3h?usp=sharing)
 
----------------------------------------------------------------------------------------------------------------------------
+A blog post about the thesis project can be found at [this link](https://mct-master.github.io/masters-thesis/2022/05/30/alena-exploration-of-emotional-response-to-vibrotactile-music.html). The entire manuscript of the thesis can be found in `Clim_MCT_Thesis_may2022.pdf`. For any questions or remarks please contact me at alena.clim@gmail.com.
 
-  "1 general statistics.R"
-
-This script contains code for installing relevant packages, for importing and preparing the data_descriptives.csv file 
-to be used as a dataset, as well as code for calculating means and SDs of different variables for reporting. 
-
-  "2 import and prepare datasets.R"
-  
-This script contains code for importing and preparing the entire dataset to be used later for analysis. Additionally, 
-subsets of the data are created and prepared for later analysis, visualizations and reporting.
-
-  "3 summarize and visualize.R"
-  
-This script contains code for summarizing data per excerpt grouped by several variables. Additionally, it contains code 
-for visualizing the data in a grid of boxplots grouped per type of emotion and Felt/Recognized.
-
-  "4 2w rep anova.R"
-  
-This script contains the code for running the repeated-measures ANOVAs based on type of emotion and Felt/Recognized. 
-Additionally, it contains code for checking the necessary assumptions, as well as post-hoc paired t-tests. 
-
-  "5 mixed anovas loss.R"
-  
-This script contains the code for running the mixed-measures ANOVAs # based on emotions' score averaged over Felt/
-Recognized scores and hearing loss level. Code for visualizing the data grouped in boxplots in a grid is also here.
-The binary hearing loss variable is used here, as there are too little people in each hearing loss category otherwise. 
-Additionally, it contains code for checking the necessary assumptions, as well as post-hoc paired t-tests. 
-
-  "6 mixed anova musicianship.R"
-  
-This script contains the code for running the mixed-measures ANOVAs based on emotions' score averaged over Felt/Recognized 
-scores and musicianship level. Code for visualizing the data grouped in boxplots in a grid is also here. The binary 
-musicianship variable is used here, as there are too little people in each musicianship category otherwise. Additionally, 
-it contains code for checking the necessary assumptions, as well as post-hoc paired t-tests. 
-
-  "7 mixed anova empathy.R"
-  
-This script contains the code for running the mixed-measures ANOVAs based on emotions' score averaged over Felt/Recognized 
-scores and empathy level. Code for visualizing the data grouped in boxplots in a grid is also here. The binary empathy 
-variable is used here, with the continuous scores split into high and low empathy levels. Additionally, it contains code for 
-checking the necessary assumptions, as well as post-hoc paired t-tests. 
-
-  "8 indep t-test musicianship empathy.R"
-  
-This script contains code for running an independent sample t-test to check whether the musicianship level influenced the 
-empathy scores, empathy being a continuous variable here and not a binary as for the mixed ANOVAs. The analysis is run 
-irrelevant of excerpt, so the data_descriptives.csv file is used. Additionally, code for visualizing the empathy scores versus 
-average emotions' ratings as a scatter plot with regression lines is here.
-
-  "9 correlations & valence-arousal.R"
-  
-This script contains code for calculating the correlations btween participants irrelevant ofexcerpt, and the correlations between 
-excerpts, irrelevant of participants. Additionally, the code for visualizing the valence and arousal ratings as a scatterplot is here.
